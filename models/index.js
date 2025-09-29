@@ -5,6 +5,7 @@ const basename = path.basename(__filename);
 require('dotenv').config()
 const connection = {
   database: process.env.DATABASE_NAME,
+  port: process.env.DB_PORT,
   username: process.env.ADMIN_USERNAME,
   password: process.env.ADMIN_PASSWORD,
   host: process.env.HOST,
